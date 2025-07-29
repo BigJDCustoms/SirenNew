@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FiveM Siren ID Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>FiveM Siren ID Finder</h1>
+    <p>Upload a ZIP of car packs and this tool will scan each pack’s carvariations.meta files to find conflicting sirenSettings values between different folders.</p>
+    <form action="/scan" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".zip" required>
+        <br>
+        <button type="submit">Scan</button>
+    </form>
+</body>
+</html>
